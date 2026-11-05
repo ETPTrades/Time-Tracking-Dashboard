@@ -1,0 +1,83 @@
+:root {
+    --navy-950: hsl(226, 43%, 10%);
+    --navy-900: hsl(235, 46%, 20%);
+    --navy-800: hsl(235, 41%, 34%);
+    --navy-200: hsl(236, 100%, 87%);
+    --purple-700: hsl(264, 64%, 52%);
+    --purple-600: hsl(246, 80%, 60%);
+    --purple-500: hsl(235, 45%, 61%);
+    --black: hsl(0, 0, 0);
+    --white: hsl(0, 100%, 100%);
+    --orange: hsl(15, 100%, 70%);
+    --blue: hsl(195, 74%, 62%);
+    --pink: hsl(348, 100%, 68%);
+    --green: hsl(145, 58%, 55%);
+    --yellow: hsl(43, 84%, 65%);
+    --grey: hsl(0, 0, 85%);
+
+    --mobile-tablet-heading-text: 1.5rem;
+    --mobile-tablet-heading-weight: 300;
+    --desktop-heading-text: 2.5rem;
+    --mobile-timestamp-text: 2rem;
+    --tablet-desktop-timestamp-text: 3.5rem;
+    --mobile-tablet-desktop-timestamp-weight: 300;
+    --mobile-tablet-desktop-category-text: 1.125rem;
+    --mobile-tablet-desktop-category-weight: 500;
+    --mobile-tablet-desktop-weekly-text: .9375rem;
+    --mobile-tablet-desktop-weekly-weight: 300;
+    /*ROUND UP?(mobile-tablet-desktop-weekly-text)*/
+
+}
+
+body {
+    font-family: 'Rubik', Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+p {
+    text-wrap: pretty;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-wrap: balance;
+}
