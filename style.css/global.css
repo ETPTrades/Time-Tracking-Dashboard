@@ -107,6 +107,12 @@ h6 {
     position: relative;
     z-index: 1;
     min-block-size: 133px;
+    width: 100%;
+}
+
+.profile__description-text {
+    display: flex;
+    flex-direction: column;
 }
 
 .profile__image {
@@ -120,6 +126,8 @@ h6 {
 
 .profile__header {
     color: var(--white);
+    font-size: var(--mobile-tablet-heading-text);
+    font-weight: var(--mobile-tablet-heading-weight);
 }
 
 .profile__weekly-container {
@@ -178,6 +186,8 @@ h6 {
 .category__total-hours {
     grid-area: total-hours;
     color: var(--white);
+    font-size: var(--mobile-timestamp-text);
+    font-weight: var(--mobile-tablet-desktop-timestamp-weight);
 }
 
 .category__weekly-hours {
@@ -220,9 +230,37 @@ h6 {
             "exercise social self-care";
     }
 
+    .category-container__sub-grid {
+        display: grid;
+        align-items: center;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas:
+            "title . elipsis"
+            "total-hours total-hours total-hours"
+            "weekly-hours weekly-hours weekly-hours"
+    }
+
     .profile {
         grid-area: profile;
     }
+
+    .category__title {
+        grid-area: title;
+    }
+
+    .category__total-hours {
+        grid-area: total-hours;
+        font-size: var(--tablet-desktop-timestamp-text);
+    }
+
+    .category__elipsis {
+        grid-area: elipsis;
+    }
+
+    .category__weekly-hours {
+        grid-area: weekly-hours;
+    }
+
 }
 
 @media (min-width: 901px) {
@@ -235,7 +273,39 @@ h6 {
         max-width: 1116px;
     }
 
+    .category-container__sub-grid {
+        display: grid;
+        align-items: center;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas:
+            "title . elipsis"
+            "total-hours total-hours total-hours"
+            "weekly-hours weekly-hours weekly-hours"
+
+    }
+
+    .category__title {
+        grid-area: title;
+    }
+
+    .category__total-hours {
+        grid-area: total-hours;
+        font-size: var(--tablet-desktop-timestamp-text);
+    }
+
+    .category__elipsis {
+        grid-area: elipsis;
+    }
+
+    .category__weekly-hours {
+        grid-area: weekly-hours;
+    }
+
     .profile {
         grid-area: profile;
+    }
+
+    .profile__header {
+        font-size: var(--desktop-heading-text);
     }
 }
