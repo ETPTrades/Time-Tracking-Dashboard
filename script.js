@@ -20,10 +20,10 @@ const timeFrames = fetch("./data.json")
 })
 .then(data => {
     const dailyClick = () => {
-        categoryContainer.forEach(card => {
-            card.querySelector(".category__title").textContent = data[0].title;
-            card.querySelector(".category__total-hours").textContent = data[0].timeframes.daily.current;
-            card.querySelector(".category__weekly-hours").textContent = `Yesterday - ${data[0].timeframes.daily.previous}hrs`;
+        categoryContainer.forEach((card, index) => {
+            card.querySelector(".category__title").textContent = data[index].title;
+            card.querySelector(".category__total-hours").textContent = data[index].timeframes.daily.current;
+            card.querySelector(".category__weekly-hours").textContent = `Yesterday - ${data[index].timeframes.daily.previous}hrs`;
         })
 
     } 
