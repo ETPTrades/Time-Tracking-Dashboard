@@ -214,11 +214,21 @@ h6 {
 }
 
 .social {
-    background-color: var(--orange);
+    background-color: var(--purple-700);
 }
 
 .self-care {
     background-color: var(--yellow);
+}
+
+button {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+button:hover {
+    color: var(--white);
 }
 
 @media (min-width: 615px) and (max-width: 900px) {
@@ -238,9 +248,10 @@ h6 {
         align-items: center;
         grid-template-columns: repeat(3, 1fr);
         grid-template-areas:
-            "title . elipsis"
+            "title title elipsis"
             "total-hours total-hours total-hours"
-            "weekly-hours weekly-hours weekly-hours"
+            "weekly-hours weekly-hours weekly-hours";
+        min-block-size: 180px;
     }
 
     .profile {
@@ -286,9 +297,10 @@ h6 {
         align-items: center;
         grid-template-columns: repeat(3, 1fr);
         grid-template-areas:
-            "title . elipsis"
+            "title title elipsis"
             "total-hours total-hours total-hours"
-            "weekly-hours weekly-hours weekly-hours"
+            "weekly-hours weekly-hours weekly-hours";
+        min-block-size: 199px;
 
     }
 
