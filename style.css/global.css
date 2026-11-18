@@ -173,6 +173,10 @@ h6 {
     align-items: center;
 }
 
+.category-container__sub-grid:hover {
+    background-color: var(--navy-800);
+}
+
 .icon {
     height: 70px;
 }
